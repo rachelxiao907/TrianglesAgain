@@ -8,7 +8,7 @@ public class Point {
   }
 
   //construct a point given a point
-  public Point (Point p) {
+  public Point(Point p) {
     x = p.x;  //private access in the same file is allowed
     y = p.y;
   }
@@ -20,5 +20,9 @@ public class Point {
   public double getY() {
     return y;
   }
-  
+
+  public double distanceTo(Point other) {
+    return Math.sqrt(Math.pow(this.x - other.x, 2) + Math.pow(this.y - other.y, 2));
+  }
+
 }
