@@ -29,8 +29,8 @@ public class Point {
     return x == other.x && y == other.y;
   }
 
-  public String toString() {
-    return "(" + x + ", " + y + ")";
-  }
+  // public String toString() {
+  //   return "(" + x + ", " + y + ")";
+  // }
 
 }
