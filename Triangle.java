@@ -20,4 +20,11 @@ public class Triangle {
     return v1.distanceTo(v2) + v1.distanceTo(v3) + v2.distanceTo(v3);
   }
 
+  public double getArea() {
+    double d1 = v1.distanceTo(v2);
+    double d2 = v1.distanceTo(v3);
+    double d3 = v2.distanceTo(v3);
+    double S = getPerimeter() / 2;
+    return Math.sqrt(S * (S - d1) * (S - d2) * (S - d3));
+  }
 }
