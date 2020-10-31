@@ -42,4 +42,8 @@ public class Triangle {
     }
     return triangle;
   }
+
+  public String toString() {
+    return "v1" + v1 + " v2" + v2 + " v3" + v3;
+  }
 }
